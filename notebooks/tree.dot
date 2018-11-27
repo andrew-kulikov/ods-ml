@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="ap_hi <= 129.5\nmse = 0.25\nsamples = 49000\nvalue = 0.499"] ;
+1 [label="age <= 19931.5\nmse = 0.216\nsamples = 28925\nvalue = 0.317"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="cholesterol <= 2.5\nmse = 0.18\nsamples = 17715\nvalue = 0.235"] ;
+1 -> 2 ;
+3 [label="mse = 0.172\nsamples = 16968\nvalue = 0.22"] ;
+2 -> 3 ;
+4 [label="mse = 0.245\nsamples = 747\nvalue = 0.572"] ;
+2 -> 4 ;
+5 [label="cholesterol <= 2.5\nmse = 0.247\nsamples = 11210\nvalue = 0.447"] ;
+1 -> 5 ;
+6 [label="mse = 0.243\nsamples = 10043\nvalue = 0.416"] ;
+5 -> 6 ;
+7 [label="mse = 0.206\nsamples = 1167\nvalue = 0.71"] ;
+5 -> 7 ;
+8 [label="ap_hi <= 138.5\nmse = 0.181\nsamples = 20075\nvalue = 0.762"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="cholesterol <= 2.5\nmse = 0.239\nsamples = 6522\nvalue = 0.604"] ;
+8 -> 9 ;
+10 [label="mse = 0.247\nsamples = 5258\nvalue = 0.558"] ;
+9 -> 10 ;
+11 [label="mse = 0.161\nsamples = 1264\nvalue = 0.798"] ;
+9 -> 11 ;
+12 [label="ap_hi <= 149.5\nmse = 0.136\nsamples = 13553\nvalue = 0.838"] ;
+8 -> 12 ;
+13 [label="mse = 0.151\nsamples = 6864\nvalue = 0.815"] ;
+12 -> 13 ;
+14 [label="mse = 0.119\nsamples = 6689\nvalue = 0.862"] ;
+12 -> 14 ;
+}

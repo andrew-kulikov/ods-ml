@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="ap_hi_categories_140-160 <= 0.5\nmse = 0.25\nsamples = 70000\nvalue = 0.5"] ;
+1 [label="ap_hi_categories_160-180 <= 0.5\nmse = 0.243\nsamples = 55564\nvalue = 0.414"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="cholesterol_3 <= 0.5\nmse = 0.236\nsamples = 51663\nvalue = 0.38"] ;
+1 -> 2 ;
+3 [label="mse = 0.227\nsamples = 46977\nvalue = 0.347"] ;
+2 -> 3 ;
+4 [label="mse = 0.204\nsamples = 4686\nvalue = 0.715"] ;
+2 -> 4 ;
+5 [label="smoke <= 0.5\nmse = 0.118\nsamples = 3901\nvalue = 0.863"] ;
+1 -> 5 ;
+6 [label="mse = 0.12\nsamples = 3514\nvalue = 0.861"] ;
+5 -> 6 ;
+7 [label="mse = 0.103\nsamples = 387\nvalue = 0.884"] ;
+5 -> 7 ;
+8 [label="cholesterol_2 <= 0.5\nmse = 0.142\nsamples = 14436\nvalue = 0.829"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="age_categories_40-50 <= 0.5\nmse = 0.145\nsamples = 11648\nvalue = 0.824"] ;
+8 -> 9 ;
+10 [label="mse = 0.147\nsamples = 9563\nvalue = 0.821"] ;
+9 -> 10 ;
+11 [label="mse = 0.134\nsamples = 2085\nvalue = 0.841"] ;
+9 -> 11 ;
+12 [label="age_categories_40-50 <= 0.5\nmse = 0.127\nsamples = 2788\nvalue = 0.85"] ;
+8 -> 12 ;
+13 [label="mse = 0.132\nsamples = 2208\nvalue = 0.843"] ;
+12 -> 13 ;
+14 [label="mse = 0.107\nsamples = 580\nvalue = 0.878"] ;
+12 -> 14 ;
+}
